@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    background-color: rgb(190, 190, 190);
+    height: 6vh;
+    position: fixed;
+    z-index: 1111111;
+    bottom: 0;
+   &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+   }
+    
+}

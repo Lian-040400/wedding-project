@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  background-color: #bebebe;
+  height: 6vh;
+  position: fixed;
+  z-index: 1111111;
+  bottom: 0; }
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
