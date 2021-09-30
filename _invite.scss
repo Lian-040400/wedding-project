@@ -1,0 +1,21 @@
+.invite{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    h1{
+        font-size: 64px;
+        margin: 10px 0;
+     
+    }
+    h2{
+        font-size: 30px;
+    }
+}

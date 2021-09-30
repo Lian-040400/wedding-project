@@ -1,19 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
 .header {
   width: 100%;
-  background-color: #bebebe;
-  height: 6vh;
+  overflow: 0.75;
   position: fixed;
   z-index: 1111111;
-  bottom: 0; }
-  .header__list {
+  bottom: 0;
+  background-color: white;
+  opacity: 0.75; }
+  .header__manu {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    padding: 10px; }
+  .header__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center; }
+  .header__item {
+    width: 25%;
+    padding: 10px 0; }
+    .header__item:hover {
+      color: #000 !important;
+      background-color: #ccc; }
+  .header__link {
+    width: 100%;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif; }
+  .header:hover {
+    background-color: white !important; }
+
+@media (max-width: 600px) {
+  .header {
+    display: none; } }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
 body {
-  width: 100%; }
+  width: 100%;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 400;
+  background-color: #ffdddd;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.home {
+  height: 100vh;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(50%); }
+  .home__text {
+    font-family: "Raleway", serif;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 4px; }
+    .home__text h1 {
+      font-size: 64px;
+      margin: 10px 0; }
+    .home__text h2 {
+      font-size: 30px;
+      margin: 10px 0; }
+
+.JaneAndJohn {
+  margin-bottom: 100px;
+  margin-top: 60px; }
+  .JaneAndJohn__content {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    margin: 0px 15px; }
+    .JaneAndJohn__content h1 {
+      padding-top: 50px;
+      font-size: 36px;
+      color: #757575; }
+    .JaneAndJohn__content img {
+      width: 100%;
+      filter: grayscale(60%);
+      object-fit: cover;
+      margin: 32px 0;
+      vertical-align: middle; }
+    .JaneAndJohn__content p {
+      margin-bottom: 32px;
+      margin-top: 40px;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 2; }
+      .JaneAndJohn__content p a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        font-size: 18px;
+        padding: 18px 28px;
+        border-radius: 4px; }
+
+.invite {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center; }
+  .invite h1 {
+    font-size: 64px;
+    margin: 10px 0; }
+  .invite h2 {
+    font-size: 30px; }
+
+.wedding {
+  margin-bottom: 70px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px; }
+  .wedding h1 {
+    padding-top: 50px;
+    font-size: 36px;
+    color: #757575;
+    margin-bottom: 50px; }
+  .wedding img {
+    width: 100%;
+    filter: grayscale(60%);
+    object-fit: cover;
+    margin: 32px 0;
+    vertical-align: middle; }
+  .wedding .questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    object-fit: cover; }
+    .wedding .questions .when {
+      color: #000;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 30px; }
+      .wedding .questions .when h2 {
+        font-size: 30px; }
+      .wedding .questions .when p {
+        display: block;
+        margin-top: 20px; }
+
+@media (max-width: 600px) {
+  .questions {
+    grid-template-columns: auto !important; } }
+
+.rsvp {
+  background-color: #fbdad9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 4px;
+  text-align: center; }
+  .rsvp h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    text-align: center;
+    display: block; }
+  .rsvp p {
+    margin: 20px 0px;
+    font-size: 18px; }
+  .rsvp button {
+    font-size: 24px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #f44336;
+    opacity: 0.60;
+    border: none;
+    display: inline-block;
+    padding: 15px 60px; }
+
+.footer {
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 27px;
+  color: white; }
+  .footer a {
+    color: #fff; }
