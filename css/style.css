@@ -26,6 +26,7 @@
       color: #000 !important;
       background-color: #ccc; }
   .header__link {
+    display: inline-block;
     width: 100%;
     text-decoration: none;
     color: #4d4d4d;
@@ -33,7 +34,8 @@
     line-height: 1.5;
     font-family: "Raleway", sans-serif; }
   .header:hover {
-    background-color: white !important; }
+    background-color: white !important;
+    cursor: pointer; }
 
 @media (max-width: 600px) {
   .header {
@@ -44,13 +46,18 @@
   margin: 0;
   box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400; }
 
 body {
   width: 100%;
-  font-family: 'Raleway',sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   background-color: #ffdddd;
   overflow-x: hidden; }
@@ -121,6 +128,10 @@ body {
         font-size: 18px;
         padding: 18px 28px;
         border-radius: 4px; }
+        .JaneAndJohn__content p a:hover {
+          cursor: pointer;
+          background-color: #a7a7a7;
+          color: #ffff; }
 
 .invite {
   width: 100%;
@@ -202,10 +213,14 @@ body {
     border-radius: 4px;
     color: #fff;
     background-color: #f44336;
-    opacity: 0.60;
+    opacity: 0.6;
     border: none;
     display: inline-block;
     padding: 15px 60px; }
+    .rsvp button:hover {
+      background-color: #a7a7a7;
+      color: #000;
+      cursor: pointer; }
 
 .footer {
   height: 10vh;
@@ -217,3 +232,87 @@ body {
   color: white; }
   .footer a {
     color: #fff; }
+    .footer a:hover {
+      color: green; }
+
+@media (max-width: 600px) {
+  .footer {
+    margin-bottom: 0; } }
+
+.modal__container {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  position: fixed;
+  z-index: 22222222222;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  visibility: hidden;
+  transition: visibility 0s opacity 0.5s; }
+  .modal__container .modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+    padding: 50px; }
+    .modal__container .modal h1 {
+      margin: 10px 0;
+      font-size: 36px;
+      letter-spacing: 4px;
+      margin: 10px 0; }
+    .modal__container .modal p {
+      font-size: 15px;
+      margin: 15px 0; }
+    .modal__container .modal form .name__input {
+      border: 1px solid #ccc;
+      padding: 8px;
+      display: block;
+      width: 100%; }
+      .modal__container .modal form .name__input::placeholder {
+        font-size: 15px; }
+    .modal__container .modal .buttons {
+      font-size: 15px; }
+      .modal__container .modal .buttons .going {
+        width: 49.99999%;
+        float: left;
+        color: #fff;
+        padding: 8px 16px;
+        background-color: #4caf50; }
+        .modal__container .modal .buttons .going:hover {
+          background-color: #dadada;
+          color: #000;
+          cursor: pointer; }
+  .modal__container.show {
+    visibility: visible !important;
+    opacity: 1 !important; }
+
+@media (max-width: 768px) {
+  .modal {
+    width: 500px !important; } }
+
+@media (max-width: 600px) {
+  .modal {
+    margin: 0 10px;
+    width: auto !important; } }
+
+@media (max-width: 600px) {
+  .going,
+  .cant__come {
+    width: 100% !important; } }
+
+.cant__come {
+  width: 49.99999%;
+  float: left;
+  color: #fff;
+  background-color: #f44336;
+  padding: 8px 16px; }
+  .cant__come:hover {
+    background-color: #dadada;
+    color: #000;
+    cursor: pointer; }

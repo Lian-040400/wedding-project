@@ -1,0 +1,95 @@
+.modal__container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    position: fixed;
+    z-index: 22222222222;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    visibility: hidden;
+    transition: visibility 0s opacity 0.5s;
+
+    .modal {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 600px;
+        text-align: center;
+        padding: 50px;
+
+        h1 {
+            margin: 10px 0;
+            font-size: 36px;
+            letter-spacing: 4px;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 15px;
+            margin: 15px 0;
+        }
+        form {
+            .name__input {
+                border: 1px solid #ccc;
+                padding: 8px;
+                display: block;
+                width: 100%;
+                &::placeholder {
+                    font-size: 15px;
+                }
+            }
+        }
+        .buttons {
+            font-size: 15px;
+            .going {
+                width: 49.99999%;
+                float: left;
+                color: #fff;
+                padding: 8px 16px;
+                background-color: #4caf50;
+                &:hover {
+                    background-color: rgb(218, 218, 218);
+                    color: #000;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &.show {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+@media (max-width: 768px) {
+    .modal {
+        width: 500px !important;
+    }
+}
+@media (max-width: 600px) {
+    .modal {
+        margin: 0 10px;
+        width: auto !important;
+    }
+}
+@media (max-width: 600px) {
+    .going,
+    .cant__come {
+        width: 100% !important ;
+    }
+}
+.cant__come {
+    width: 49.99999%;
+    float: left;
+    color: #fff;
+    background-color: #f44336;
+    padding: 8px 16px;
+    &:hover {
+        background-color: rgb(218, 218, 218);
+        color: #000;
+        cursor: pointer;
+    }
+}

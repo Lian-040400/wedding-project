@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +7,26 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Document</title>
 </head>
-
 <body>
     <header class="header">
         <div class="header__manu">
             <ul class="header__list">
-                <li class="header__item">
-                    <a class="header__link" href="#project">Home</a>
+                <li class="header__item" >
+                    <a class="header__link" href="#home">Home</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link" href="#about">Jane & Jhone</a>
+                    <a class="header__link" href="#JaneAndJohn">Jane & Jhone</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link" href="#contact">Wedding</a>
+                    <a class="header__link" href="#wedding">Wedding</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link" href="#contact">RSVP</a>
+                    <a class="header__link" href="#rsvp">RSVP</a>
                 </li>
             </ul>
         </div>
     </header>
-    <div class="home">
+    <div class="home" id="home">
         <div class="home__text">
             <h1>Jane & John</h1>
             <h2>Are getting married</h2>
@@ -38,8 +36,8 @@
         </div>
     </div>
     <div class="container">
-        
-        <div class="JaneAndJohn">
+
+        <div class="JaneAndJohn" id="JaneAndJohn">
             <div class="JaneAndJohn__content">
                 <h1>
                     <b>Jane & John</b>
@@ -47,28 +45,32 @@
                 <img src="./img/2.jpg" alt="img">
                 <p>
                     <i>
-                        You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
+                        You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
                     </i>
                 </p>
-               <p> <a href="">Wedding Details</a></p>
+                <p> <a href="">Wedding Details</a></p>
             </div>
         </div>
     </div>
     <div class="invite">
-        <h1>You Are Invited</h1> 
+        <h1>You Are Invited</h1>
         <h2>Of course..</h2>
-
     </div>
     <div class="container">
-        <div class="wedding">
+        <div class="wedding" id="wedding">
             <h1><b>THE WEDDING</b></h1>
-            <img src="./img/4.jpg" alt="" >
+            <img src="./img/4.jpg" alt="">
             <div class="questions">
                 <div class="when">
                     <h2>When</h2>
@@ -82,17 +84,13 @@
                 </div>
             </div>
         </div>
-        
-
     </div>
-    <div class="rsvp">
+    <div class="rsvp" id="rsvp">
         <h1>HOPE YOU CAN MAKE IT!</h1>
         <p>Kindly Respond By January, 2017</p>
         <p>
-            <button>RSVP</button>
+            <button class="rsvp__button">RSVP</button>
         </p>
-
-
     </div>
     <div class="footer">
         <p>
@@ -100,6 +98,22 @@
             <a href="">w3.css</a>
         </p>
     </div>
+    <div class="modal__container">
+        <div class="modal">
+            <h1>CAN YOU COME?</h1>
+            <p>We really hope you can make it.</p>
+            <form action="">
+                <input class="name__input" type="text" placeholder="Name(s)">
+            </form>
+            <p>
+                <i>Sincerely, John & Jane</i>
+            </p>
+            <div class="buttons">
+                <div class="going">Going</div>
+                <div class="cant__come">Can't come</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/scrypt.js"></script>
 </body>
-
 </html>

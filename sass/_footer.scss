@@ -1,0 +1,21 @@
+@import "variables";
+.footer {
+    height: 10vh;
+    background-color: $footerColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    color: white;
+    a {
+        color: #fff;
+        &:hover {
+            color: green;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        margin-bottom: 0;
+    }
+}
